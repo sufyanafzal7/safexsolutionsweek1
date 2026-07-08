@@ -1,6 +1,6 @@
 # 💼 SafeX Intern Candidate Management Portal
 
-> A premium, high-fidelity Candidate Management Portal built with Flutter for Week 1 of the SafeX Solutions Internship[cite: 1]. This cross-platform prototype showcases an elite modern startup aesthetic on par with products like Stripe, Linear, and Apple, featuring an in-memory CRUD state engine, live analytical metrics, and fully responsive adaptive layouts[cite: 1].
+> A responsive Intern Candidate Management Portal prototype built with Flutter for the SafeX Solutions Week 1 internship task. The application provides a modern dashboard experience for managing candidates across mobile, tablet, and desktop platforms.[cite: 1]. This cross-platform prototype showcases an elite modern startup aesthetic on par with products like Stripe, Linear, and Apple, featuring an in-memory CRUD state engine, live analytical metrics, and fully responsive adaptive layouts[cite: 1].
 
 <br>
 
@@ -236,8 +236,8 @@ flutter run -d chrome
 
 ## 👥 Contributors
 
-- **Your Name** — Lead Flutter Intern Developer[cite: 1]
+- **Sufyan Afzal** — Lead Flutter Intern Developer[cite: 1]
 - **SafeX Solutions Technical Team** — Project Mentorship & Review[cite: 1]
 
 ---
-<p align="center">Built with excellence for SafeX Solutions Accessibility Management Platforms</p>
+<p align="center">Built for SafeX Solutions Intern Candidate Management Portal Prototype</p>
