@@ -1,6 +1,6 @@
 # 💼 SafeX Intern Candidate Management Portal
 
-> A responsive Intern Candidate Management Portal prototype built with Flutter for the SafeX Solutions Week 1 internship task. The application provides a modern dashboard experience for managing candidates across mobile, tablet, and desktop platforms.[cite: 1]. This cross-platform prototype showcases an elite modern startup aesthetic on par with products like Stripe, Linear, and Apple, featuring an in-memory CRUD state engine, live analytical metrics, and fully responsive adaptive layouts[cite: 1].
+> A responsive Intern Candidate Management Portal prototype built with Flutter for the SafeX Solutions Week 1 internship task. The application provides a modern dashboard experience for managing candidates across mobile, tablet, and desktop platforms. This cross-platform prototype showcases an elite modern startup aesthetic on par with products like Stripe, Linear, and Apple, featuring an in-memory CRUD state engine, live analytical metrics, and fully responsive adaptive layouts.
 
 <br>
 
@@ -33,79 +33,102 @@
 
 ## 💼 Project Overview
 
-The **SafeX Intern Candidate Management Portal** is a production-ready frontend prototype designed to streamline hiring pipelines[cite: 1]. Far from a basic classroom or boot camp assignment, this portal uses advanced state propagation and responsive structural components to ensure clean usability across handheld mobile devices, tablets, and full desktop or web environments[cite: 1].
+The **SafeX Intern Candidate Management Portal** is a production-ready frontend prototype designed to streamline hiring pipelines. Far from a basic classroom or boot camp assignment, this portal uses advanced state propagation and responsive structural components to ensure clean usability across handheld mobile devices, tablets, and full desktop or web environments.
 
-### Core Focus Areas[cite: 1]
-- ✨ **Premium Aesthetic**: Material 3 implementation following strict design standards matching industry-leading apps like Linear and Stripe[cite: 1].
-- 📐 **Responsive Architecture**: Fluid sizing and adaptive layout wrappers that transition flawlessly between small phones, tablets, and desktop displays[cite: 1].
+### Core Focus Areas
+- ✨ **Premium Aesthetic**: Material 3 implementation following strict design standards matching industry-leading apps like Linear and Stripe.
+- 📐 **Responsive Architecture**: Fluid sizing and adaptive layout wrappers that transition flawlessly between small phones, tablets, and desktop displays.
 - 🧠 **Dynamic State Binding**: Uses a fast in-memory change propagation system to run full status lifecycle actions without requiring an immediate database backend.
-- 🛡️ **Clean Code Standards**: Production-grade modularity, full null safety compliance, and robust asset decoupling[cite: 1].
+- 🛡️ **Clean Code Standards**: Production-grade modularity, full null safety compliance, and robust asset decoupling.
 
 ---
 
 ## 📐 Key Architectural Highlights
 
-The system is decoupled using an intentional separation of view representations, models, utility sets, and custom local state injectors[cite: 1].
+The system is decoupled using an intentional separation of view representations, models, utility sets, and custom local state injectors.
 
 ### Responsive Navigation Topology
-Rather than using basic conditional views, the layout utilizes an intelligent, responsive navigation framework to serve different form factors automatically[cite: 1]:
-- **Handheld Media Viewports**: Renders a standard ergonomic bottom navigation bar with integrated material ripples[cite: 1].
-- **Wide Screens / Tablets / Desktop**: Transmutes the workspace into a multi-column view managed by an adaptive `NavigationRail` to maximize widescreen real estate[cite: 1].
+Rather than using basic conditional views, the layout utilizes an intelligent, responsive navigation framework to serve different form factors automatically:
+- **Handheld Media Viewports**: Renders a standard ergonomic bottom navigation bar with integrated material ripples.
+- **Wide Screens / Tablets / Desktop**: Transmutes the workspace into a multi-column view managed by an adaptive `NavigationRail` to maximize widescreen real estate.
 
 ### Component Modularization
-Every UI element is split into independent widgets[cite: 1]. Cards use explicit canvas decoration profiles to keep memory overhead low, and lists leverage performance-optimized viewport calculations for smooth rendering even with large data structures.
+Every UI element is split into independent widgets. Cards use explicit canvas decoration profiles to keep memory overhead low, and lists leverage performance-optimized viewport calculations for smooth rendering even with large data structures.
 
+---
+
+## 🎯 Task Details
+
+**Objective:**
+
+Design and prototype a mobile-friendly and desktop-friendly Intern Candidate Management Portal for SafeX Solutions.
+
+**Goal:**
+
+Create a responsive candidate management experience that allows HR teams to:
+- View candidate information
+- Track recruitment progress
+- Manage candidate statuses
+- Access recruitment insights through a modern dashboard
+
+**Platform:**
+
+Flutter application supporting:
+- Mobile devices
+- Tablets
+- Desktop/Web environments
+- 
 ---
 
 ## 📱 App Features — Screen by Screen
 
-### 1. Splash Screen (`splash_screen.dart`)[cite: 1]
-The entry point of the app[cite: 1]. It features a smooth, high-contrast premium gradient backdrop utilizing SafeX brand colors[cite: 1]. It includes:
-- Clear typography displaying the "SafeX Solutions" name[cite: 1].
-- A custom synchronized linear fade transition using an integrated loop animation controller[cite: 1].
-- A subtle micro-loading element that cleanly transfers users to the main navigation hub after exactly three seconds[cite: 1].
+### 1. Splash Screen (`splash_screen.dart`)
+The entry point of the app. It features a smooth, high-contrast premium gradient backdrop utilizing SafeX brand colors. It includes:
+- Clear typography displaying the "SafeX Solutions" name.
+- A custom synchronized linear fade transition using an integrated loop animation controller.
+- A subtle micro-loading element that cleanly transfers users to the main navigation hub after exactly three seconds.
 
-### 2. Home Dashboard (`home_screen.dart`)[cite: 1]
-A comprehensive management interface packed with high-end dashboard components[cite: 1]:
-- **Greeting Header**: Personalized dynamic greeting welcoming the authenticated HR operator[cite: 1].
-- **Live Search Field**: Real-time filtering search bar allowing instant searches matching names or specific skill tags[cite: 1].
-- **Analytical Metrics Grid**: A responsive grid tracking Total Candidates, Shortlisted, Interview Scheduled, and Rejected counts[cite: 1]. These metric values update instantly as states change.
-- **Candidate Profiles Feed**: A scrollable view of candidate cards using circular initial placeholders, detailed credential notes, and colored status badges[cite: 1].
+### 2. Home Dashboard (`home_screen.dart`)
+A comprehensive management interface packed with high-end dashboard components:
+- **Greeting Header**: Personalized dynamic greeting welcoming the authenticated HR operator.
+- **Live Search Field**: Real-time filtering search bar allowing instant searches matching names or specific skill tags.
+- **Analytical Metrics Grid**: A responsive grid tracking Total Candidates, Shortlisted, Interview Scheduled, and Rejected counts. These metric values update instantly as states change.
+- **Candidate Profiles Feed**: A scrollable view of candidate cards using circular initial placeholders, detailed credential notes, and colored status badges.
 
-### 3. Candidate Details Screen (`candidate_details.dart`)[cite: 1]
-A detailed review pane displaying a candidate's full profile information[cite: 1]:
-- **Hero Avatar**: Uses standard framework `Hero` animation nodes to cleanly scale profile placeholders into the details view[cite: 1].
-- **Biographical Datasets**: Organizes personal contact cards, degree info, and academic institution summaries[cite: 1].
-- **Core Skills Matrix**: Renders interactive skill sets wrapped cleanly inside dynamic flow layouts[cite: 1].
-- **Interactive Action Cluster**: Action buttons allowing managers to change candidate status states on the fly[cite: 1].
+### 3. Candidate Details Screen (`candidate_details.dart`)
+A detailed review pane displaying a candidate's full profile information:
+- **Hero Avatar**: Uses standard framework `Hero` animation nodes to cleanly scale profile placeholders into the details view.
+- **Biographical Datasets**: Organizes personal contact cards, degree info, and academic institution summaries.
+- **Core Skills Matrix**: Renders interactive skill sets wrapped cleanly inside dynamic flow layouts.
+- **Interactive Action Cluster**: Action buttons allowing managers to change candidate status states on the fly.
 
-### 4. Admin Profile Screen (`profile_screen.dart`)[cite: 1]
-A polished backend profile panel built for HR operators and system admins[cite: 1]:
-- **Account Metadata**: Displays profile data and authentication credentials[cite: 1].
-- **Portal Option Cards**: Sleek toggle blocks built for configuring system settings, managing notification channels, and checking platform details[cite: 1].
-- **System Actions**: Secure logout options styled with distinct alert palettes[cite: 1].
+### 4. Admin Profile Screen (`profile_screen.dart`)
+A polished backend profile panel built for HR operators and system admins:
+- **Account Metadata**: Displays profile data and authentication credentials.
+- **Portal Option Cards**: Sleek toggle blocks built for configuring system settings, managing notification channels, and checking platform details.
+- **System Actions**: Secure logout options styled with distinct alert palettes.
 
 ---
 
 ## 🎨 Premium UI/UX Design Spec
 
-The user interface balances minimal corporate styles with a dark-tinted modern color palette to achieve a professional finish[cite: 1].
+The user interface balances minimal corporate styles with a dark-tinted modern color palette to achieve a professional finish.
 
-### Color Configuration[cite: 1]
+### Color Configuration
 | Parameter Identity | Hex Value Spec | Practical Target Area |
 |---|---|---|
-| **Primary Accent Blue** | `#2563EB` | Global actions, active highlights, header focus[cite: 1] |
-| **Secondary Cyan** | `#06B6D4` | Focus outlines, special tags, splash accents[cite: 1] |
-| **Accent Emerald** | `#10B981` | Validation chips, active metrics, success indicators[cite: 1] |
-| **Canvas Background** | `#F8FAFC` | Main application background tint[cite: 1] |
-| **Card Surface** | `#FFFFFF` | Isolated rounded cards and list items[cite: 1] |
-| **Text Primary Ink** | `#1E293B` | Main headings, emphasis text, primary labels[cite: 1] |
-| **Text Secondary Slate**| `#64748B` | Subheadings, details, unselected states[cite: 1] |
+| **Primary Accent Blue** | `#2563EB` | Global actions, active highlights, header focus |
+| **Secondary Cyan** | `#06B6D4` | Focus outlines, special tags, splash accents |
+| **Accent Emerald** | `#10B981` | Validation chips, active metrics, success indicators |
+| **Canvas Background** | `#F8FAFC` | Main application background tint |
+| **Card Surface** | `#FFFFFF` | Isolated rounded cards and list items |
+| **Text Primary Ink** | `#1E293B` | Main headings, emphasis text, primary labels |
+| **Text Secondary Slate**| `#64748B` | Subheadings, details, unselected states |
 
 ### Design Tokens Used
-- **Typography Layout**: Uses `Plus Jakarta Sans` via Google Fonts to deliver clean, modern startup-style letter spacing[cite: 1].
-- **Borders & Curves**: Features standard `16px` rounded corners across all primary cards[cite: 1].
-- **Shadow Profiles**: Uses subtle, low-opacity gray borders and soft shadows instead of harsh dark elevation lines[cite: 1].
+- **Typography Layout**: Uses `Plus Jakarta Sans` via Google Fonts to deliver clean, modern startup-style letter spacing.
+- **Borders & Curves**: Features standard `16px` rounded corners across all primary cards.
+- **Shadow Profiles**: Uses subtle, low-opacity gray borders and soft shadows instead of harsh dark elevation lines.
 
 ---
 
@@ -136,7 +159,7 @@ To move past flat, non-functional mockups, this prototype includes a clean **In-
 
 ## 📁 Project Directory Structure
 
-The repository follows a clean, feature-modular structure, separating data sources from user presentation layers[cite: 1].
+The repository follows a clean, feature-modular structure, separating data sources from user presentation layers.
 
 ```
 safexsolutionsweek1/
@@ -175,10 +198,10 @@ safexsolutionsweek1/
 ## ✅ Prerequisites
 
 Before running the portal, ensure your development system has the following setup:
-- [Flutter SDK](https://docs.flutter.dev/get-started/install) Latest Stable Version (Version 3.x+ recommended)[cite: 1]
-- Android SDK (API Level 21 or newer)[cite: 1]
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) Latest Stable Version (Version 3.x+ recommended)
+- Android SDK (API Level 21 or newer)
 - iOS SDK (Xcode 15+ for local testing)
-- A modern web browser or native desktop testing build tool configuration[cite: 1]
+- A modern web browser or native desktop testing build tool configuration
 
 ---
 
@@ -186,7 +209,7 @@ Before running the portal, ensure your development system has the following setu
 
 ### 1. Initialize and Enter the Project Root
 ```bash
-git clone [https://github.com/your-username/safexsolutionsweek1.git](https://github.com/your-username/safexsolutionsweek1.git)
+git clone https://github.com/sufyanafzal7/safexsolutionsweek1.git
 cd safexsolutionsweek1
 ```
 
@@ -216,10 +239,10 @@ flutter run -d chrome
 
 ## 🛠 Flutter Best Practices Met
 
-- 🔹 **De-coupled Presentation Layer**: Completely separates view code from mock data models and business logic[cite: 1].
+- 🔹 **De-coupled Presentation Layer**: Completely separates view code from mock data models and business logic.
 - 🔹 **Strict Type Safety**: Full type safety enforced across the code, avoiding loose dynamic types.
-- 🔹 **Optimized Layout Elements**: Eliminates hardcoded margins and heights, using flexible layout wrappers to prevent layout overflows on any screen size[cite: 1].
-- 🔹 **No Code Duplication**: Reuses core UI components like metrics blocks and profile rows across multiple list configurations[cite: 1].
+- 🔹 **Optimized Layout Elements**: Eliminates hardcoded margins and heights, using flexible layout wrappers to prevent layout overflows on any screen size.
+- 🔹 **No Code Duplication**: Reuses core UI components like metrics blocks and profile rows across multiple list configurations.
 
 ---
 
@@ -236,8 +259,8 @@ flutter run -d chrome
 
 ## 👥 Contributors
 
-- **Sufyan Afzal** — Lead Flutter Intern Developer[cite: 1]
-- **SafeX Solutions Technical Team** — Project Mentorship & Review[cite: 1]
+- **Sufyan Afzal** — Lead Flutter Intern Developer
+- **SafeX Solutions Technical Team** — Project Mentorship & Review
 
 ---
 <p align="center">Built for SafeX Solutions Intern Candidate Management Portal Prototype</p>
